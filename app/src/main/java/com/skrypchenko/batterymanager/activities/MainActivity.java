@@ -70,7 +70,7 @@ public class MainActivity extends BaseActivity {
 
     protected void onPause() {
         super.onPause();
-        this.unregisterReceiver(this.batteryInfoReceiver);
+        getApplicationContext().unregisterReceiver(this.batteryInfoReceiver);
     }
 
 
