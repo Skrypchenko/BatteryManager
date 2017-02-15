@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/id_battery_lianer"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/battery"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:focusableInTouchMode="false"
+        android:id="@+id/id_battery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        CircleProgressView:cpv_autoTextSize="false"
+        CircleProgressView:cpv_barColor="@color/primary"
+        CircleProgressView:cpv_barWidth="25dp"
+        CircleProgressView:cpv_innerContourSize="0dp"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_outerContourSize="0dp"
+        CircleProgressView:cpv_rimColor="@color/progress_default"
+        CircleProgressView:cpv_rimWidth="25dp"
+        CircleProgressView:cpv_seekMode="true"
+        CircleProgressView:cpv_showUnit="true"
+        CircleProgressView:cpv_spinColor="@color/primary"
+        CircleProgressView:cpv_textColor="@color/progress_default"
+        CircleProgressView:cpv_unitColor="@color/progress_default"
+        CircleProgressView:cpv_textScale="1"
+        CircleProgressView:cpv_unitScale="1"
+        CircleProgressView:cpv_textSize="20dp"
+        CircleProgressView:cpv_unitSize="20dp"
+        CircleProgressView:cpv_unit="%"
+        CircleProgressView:cpv_unitPosition="right_top"
+
+        />
+
+        <!--CircleProgressView:cpv_value="10"-->
+
+
+
+        <TextView
+            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/id_storage_lianer"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="@string/storage"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <at.grabner.circleprogress.CircleProgressView
+        android:focusableInTouchMode="false"
+        android:id="@+id/id_storage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        CircleProgressView:cpv_autoTextSize="false"
+        CircleProgressView:cpv_barColor="@color/primary"
+        CircleProgressView:cpv_barWidth="25dp"
+        CircleProgressView:cpv_innerContourSize="0dp"
+        CircleProgressView:cpv_maxValue="100"
+        CircleProgressView:cpv_outerContourSize="0dp"
+        CircleProgressView:cpv_rimColor="@color/progress_default"
+        CircleProgressView:cpv_rimWidth="25dp"
+        CircleProgressView:cpv_seekMode="true"
+        CircleProgressView:cpv_showUnit="true"
+        CircleProgressView:cpv_spinColor="@color/primary"
+        CircleProgressView:cpv_textColor="@color/progress_default"
+        CircleProgressView:cpv_unitColor="@color/progress_default"
+        CircleProgressView:cpv_unit="%"
+        CircleProgressView:cpv_unitScale="1"
+        CircleProgressView:cpv_textScale="1"
+        CircleProgressView:cpv_textSize="20dp"
+        CircleProgressView:cpv_unitSize="20dp"
+        CircleProgressView:cpv_unitPosition="right_top"
+
+        />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/id_storage_text"
+            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/id_ram_lianer"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/hram"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:focusableInTouchMode="false"
+                android:id="@+id/id_ram"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                CircleProgressView:cpv_autoTextSize="false"
+                CircleProgressView:cpv_barColor="@color/primary"
+                CircleProgressView:cpv_barWidth="25dp"
+                CircleProgressView:cpv_innerContourSize="0dp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_outerContourSize="0dp"
+                CircleProgressView:cpv_rimColor="@color/progress_default"
+                CircleProgressView:cpv_rimWidth="25dp"
+                CircleProgressView:cpv_seekMode="true"
+                CircleProgressView:cpv_showUnit="true"
+                CircleProgressView:cpv_spinColor="@color/primary"
+                CircleProgressView:cpv_textColor="@color/progress_default"
+                CircleProgressView:cpv_unitColor="@color/progress_default"
+                CircleProgressView:cpv_textScale="1"
+                CircleProgressView:cpv_unitScale="1"
+                CircleProgressView:cpv_textSize="20dp"
+                CircleProgressView:cpv_unitSize="20dp"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_unitPosition="right_top"
+                />
+
+
+            <TextView
+                android:id="@+id/id_ram_text"
+                android:textSize="14dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+<Button
+    android:id="@+id/id_clear_all"
+    android:textSize="18dp"
+    android:textAllCaps="true"
+    android:text="@string/clean_all"
+    android:textColor="@color/white"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+</Button>
+
+
+</LinearLayout>

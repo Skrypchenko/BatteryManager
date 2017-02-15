@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Smart Manager</string>
+    <string name="battery">Battery</string>
+    <string name="storage">Storage</string>
+    <string name="hram">RAM</string>
+    <string name="clean_all">Clean all</string>
+    <string name="used">Used</string>
+
+    <string name="system_and_apps">System and apps:</string>
+    <string name="mb">MB</string>
+    <string name="gb">GB</string>
+    <string name="free">free</string>
+    <string name="total">Total:</string>
+
+    <string name="close">End</string>
+    <string name="background_applications">Background Applications:</string>
+    <string name="excluded_reserved_memory">(excluded reserved memory)</string>
+
+
+    <string name="unnecessary_data">Unnecessary data:</string>
+    <string name="system_user_data">System/User data:</string>
+
+
+    <string name="delete">Delete</string>
+    <string name="detail">Detail</string>
+    <string name="user_data">User data</string>
+
+
+    <string name="deletes_unnecessary_data_such_as_cached_residual_and_advertisement_files_to_free_up_more_storage_space">Deletes unnecessary data such as cached, residual and advertisement files to free up more storage space.</string>
+
+    <string name="delete_unused_files_and_applications_to_free_more_storage_space">Delete unused files and applications to free more storage space</string>
+
+</resources>

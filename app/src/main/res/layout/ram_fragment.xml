@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_margin="15dp"
+        android:id="@+id/id_ram_lianer"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:focusableInTouchMode="false"
+            android:id="@+id/id_ram"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            CircleProgressView:cpv_autoTextSize="false"
+            CircleProgressView:cpv_barColor="@color/primary"
+            CircleProgressView:cpv_barWidth="25dp"
+            CircleProgressView:cpv_innerContourSize="0dp"
+            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_outerContourSize="0dp"
+            CircleProgressView:cpv_rimColor="@color/progress_default"
+            CircleProgressView:cpv_rimWidth="25dp"
+            CircleProgressView:cpv_seekMode="true"
+            CircleProgressView:cpv_showUnit="true"
+            CircleProgressView:cpv_spinColor="@color/primary"
+            CircleProgressView:cpv_textColor="@color/progress_default"
+            CircleProgressView:cpv_unitColor="@color/progress_default"
+            CircleProgressView:cpv_textScale="1"
+            CircleProgressView:cpv_unitScale="1"
+            CircleProgressView:cpv_textSize="20dp"
+            CircleProgressView:cpv_unitSize="20dp"
+            CircleProgressView:cpv_unit="%"
+            CircleProgressView:cpv_unitPosition="right_top"
+            />
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:text="@string/used"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/id_system_and_apps"
+                android:layout_marginTop="15dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/id_free_mem"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_total_mem"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+<FrameLayout
+    android:background="@color/secondary_text"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"></FrameLayout>
+    <LinearLayout
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/id_background_applications"
+            android:text="asdgasdg"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@color/secondary_text"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recycler_view"
+        android:text="@string/hram"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
