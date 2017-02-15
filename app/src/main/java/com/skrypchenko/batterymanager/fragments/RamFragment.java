@@ -151,12 +151,12 @@ public class RamFragment extends BaseFragment {
             String appName = processInfo.processName;
             Drawable icon = null;
             String size = null;
-            try {
+            try {try{
                 appName = (String) packageManager.getApplicationLabel(packageManager.getApplicationInfo(processInfo.processName, PackageManager.GET_META_DATA));
                 ApplicationInfo app = packageManager.getApplicationInfo(processInfo.processName, 0);
                 icon = packageManager.getApplicationIcon(app);
             } catch (PackageManager.NameNotFoundException e) {
-                Log.e(TAG,"Application info not found for process : " + processInfo.processName,e);}
+                Log.e(TAG,"Application info not found for process : " + processInfo.processName,e);}}catch (Exception e){e.printStackTrace();}
                 int pids[] = new int[1];
                 pids[0] = processInfo.pid;
                 android.os.Debug.MemoryInfo[] memoryInfoArray = activityManager.getProcessMemoryInfo(pids);
