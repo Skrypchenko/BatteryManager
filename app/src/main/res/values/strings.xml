@@ -27,7 +27,17 @@
 
 
     <string name="deletes_unnecessary_data_such_as_cached_residual_and_advertisement_files_to_free_up_more_storage_space">Deletes unnecessary data such as cached, residual and advertisement files to free up more storage space.</string>
-
     <string name="delete_unused_files_and_applications_to_free_more_storage_space">Delete unused files and applications to free more storage space</string>
+
+
+
+    <string name="battery_usage">Battery Usage</string>
+    <string name="the_estimated_usage_time_may_vary_depending_on_your_device_settings_surrounding_environment_usage_pattern_an_actua_device_usage">The estimated usage time may vary depending on your device settings, surrounding environment, usage pattern, and actual device usage.</string>
+    <string name="app_optimization">App optimization</string>
+   <string name="optimizing">Optimising:</string>
+
+    <string name="power_saving_mode">Power saving mode</string>
+
+    <string name="ultra_power_saving_mode">Ultra power saving mode</string>
 
 </resources>

@@ -105,7 +105,11 @@
 
 
                 <Button
-                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:background="@drawable/layout_bg"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_gravity="right"
                     android:text="@string/detail"
                     android:layout_width="wrap_content"
@@ -160,6 +164,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:background="@drawable/layout_bg"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
         android:layout_gravity="right"
@@ -199,6 +206,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:background="@drawable/layout_bg"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
         android:layout_gravity="right"

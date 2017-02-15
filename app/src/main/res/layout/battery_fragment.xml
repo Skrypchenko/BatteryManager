@@ -72,7 +72,6 @@
 
                         android:textSize="22dp"
                         android:textColor="@color/black"
-                        android:text="@string/used"
                         android:gravity="right"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
@@ -105,9 +104,12 @@
 
 
                     <Button
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:background="@drawable/layout_bg"
                         android:layout_marginBottom="15dp"
                         android:layout_gravity="right"
-                        android:text="@string/detail"
+                        android:text="@string/battery_usage"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp" />
 
@@ -118,6 +120,7 @@
             </LinearLayout>
 
             <TextView
+                android:text="@string/the_estimated_usage_time_may_vary_depending_on_your_device_settings_surrounding_environment_usage_pattern_an_actua_device_usage"
                 android:id="@+id/id_total_mem"
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
@@ -139,7 +142,7 @@
             android:layout_height="30dp">
             <TextView
                 android:id="@+id/id_background_applications"
-                android:text="@string/unnecessary_data"
+                android:text="@string/app_optimization"
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
                 android:gravity="center_vertical"
@@ -159,11 +162,25 @@
             android:layout_margin="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:textColor="@color/red_text"
+            android:text="@string/optimizing"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <Button
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:background="@drawable/layout_bg"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:layout_gravity="right"
-            android:text="@string/delete"
+            android:text="@string/detail"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
 
@@ -193,18 +210,65 @@
             android:layout_height="1dp"></FrameLayout>
 
 
-        <TextView
-            android:text="@string/delete_unused_files_and_applications_to_free_more_storage_space"
-            android:layout_margin="15dp"
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <Button
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="15dp"
-            android:layout_gravity="right"
-            android:text="@string/detail"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp" />
+            android:layout_height="60dp">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/power_saving_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="11 h 53 m remining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginLeft="15dp"
+            android:background="@color/secondary_text"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/ultra_power_saving_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="26 h 21 m remining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
 
 
     </LinearLayout></ScrollView>

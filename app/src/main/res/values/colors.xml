@@ -17,5 +17,8 @@
 
 
     <color name="progress_default">#DBDCDE</color>
+    <color name="red_text">#cc0000</color>
+
+
 
 </resources>
