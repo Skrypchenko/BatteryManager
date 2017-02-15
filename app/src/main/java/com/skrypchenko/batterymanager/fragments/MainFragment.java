@@ -188,7 +188,7 @@ public class MainFragment extends BaseFragment {
 
 
     public void onEvent(BatteryEvent event){
-        id_battery.setValue(event.getLevel());
+        id_battery.setValueAnimated(event.getLevel());
     }
 
 
