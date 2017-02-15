@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_margin="15dp"
-                    android:id="@+id/id_storage_lianer"
+                    android:id="@+id/id_battary_lianer"
                     android:orientation="vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -31,7 +31,7 @@
 
                     <at.grabner.circleprogress.CircleProgressView
                         android:focusableInTouchMode="false"
-                        android:id="@+id/id_storage"
+                        android:id="@+id/id_battary"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         CircleProgressView:cpv_autoTextSize="false"

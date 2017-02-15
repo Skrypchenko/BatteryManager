@@ -2,9 +2,6 @@ package com.skrypchenko.batterymanager.fragments;
 
 import android.app.Activity;
 import android.app.ActivityManager;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -21,10 +18,7 @@ import android.widget.TextView;
 import com.skrypchenko.batterymanager.R;
 import com.skrypchenko.batterymanager.activities.MainActivity;
 import com.skrypchenko.batterymanager.events.BatteryEvent;
-import com.skrypchenko.batterymanager.utils.AppObj;
 import com.skrypchenko.batterymanager.utils.Utils;
-
-import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 import at.grabner.circleprogress.CircleProgressView;
